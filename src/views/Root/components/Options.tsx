@@ -27,6 +27,8 @@ export const Options: FC<OptionsProps> = ({ options }) => {
     errorsRef.current.clear();
     setErrorCount(0);
     setSelectedOption(null);
+    // Tell the react server components in charge of providing the data to
+    // re-fetch it a.k.a. re-generate the randomized options list
     router.refresh();
   };
 
