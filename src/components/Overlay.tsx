@@ -9,7 +9,7 @@ export const Overlay: FC<OverlayProps> = ({ isVisible, content, children }) => {
   if (!isVisible) return <>{children}</>;
 
   return (
-    <div className="relative p-4">
+    <div className="relative m-4 p-4">
       <div className="absolute inset-0 flex items-center justify-center rounded bg-black bg-opacity-70">
         {content}
       </div>

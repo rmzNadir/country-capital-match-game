@@ -70,8 +70,10 @@ export const Options: FC<OptionsProps> = ({ options }) => {
         </div>
       }
     >
-      <div className="flex flex-col items-center gap-3 ">
-        <h1 className="text-2xl">Try matching the capitals to its country!</h1>
+      <div className="m-4 flex flex-col items-center gap-3">
+        <h1 className="text-center text-2xl">
+          Try matching the capitals to its country!
+        </h1>
 
         {/* 
             2.25rem === 3xl line height size. this allows us to prevent the
@@ -80,7 +82,7 @@ export const Options: FC<OptionsProps> = ({ options }) => {
         <h2 className="min-h-[2.25rem] text-3xl">
           {Array.from({ length: errorCount }, () => "❌")}
         </h2>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
           {options.map((option) => {
             // Given the simplicity of the component, I don't believe extracting
             // this logic to a separate component is worth it as we'd have to
