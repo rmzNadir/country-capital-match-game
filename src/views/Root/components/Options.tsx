@@ -74,7 +74,7 @@ export const Options: FC<OptionsProps> = ({ options }) => {
     >
       <div className="m-4 flex flex-col items-center gap-3">
         <h1 className="text-center text-2xl">
-          Try matching the capitals to its country!
+          Try matching the capital to its country!
         </h1>
 
         {/* 
